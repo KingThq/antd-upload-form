@@ -42,7 +42,7 @@ const UploadBtn = React.forwardRef((props: any, ref: any) => {
       customRequest={customRequest}
       onRemove={onRemove}
       ref={ref}
-      defaultFileList={defaultFileList}
+      fileList={defaultFileList}
       onChange={onUploadChange}
     >
       <Button>
