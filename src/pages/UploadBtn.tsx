@@ -25,7 +25,7 @@ const UploadBtn = React.forwardRef((props: any, ref: any) => {
     options.onProgress({ percent: 0 });
     const url = await uploadService();
     options.onProgress({ percent: 100 });
-    options.onSuccess();
+    options.onSuccess({}, url);
     if (onChange) onChange(url);
   };
 
